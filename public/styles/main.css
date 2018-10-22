@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Germania+One");
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row, nowrap;
+          flex-flow: row, nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.01)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.01));
+}
+
+.header__mainImage {
+  height: 60%;
+  padding: 20px 60px;
+}
+
+.mainBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 85vh;
+  background-image: url("./resources/images/main_banner_bg_image.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.mainBanner__container {
+  width: 35vw;
+}
+
+.mainBanner__container__title {
+  font-family: 'Germania One', cursive;
+  font-size: 32pt;
+  font-weight: 100;
+  color: white;
+  margin: 0;
+}
+
+.mainBanner__container__p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 16pt;
+  font-weight: 600;
+  color: white;
+}
+
+.mainBanner__container__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-family: 'Germania One', cursive;
+  font-size: 28pt;
+  background: #B22922;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.mainBanner__container__button:hover {
+  background: white;
+  color: #B22922;
+  -webkit-filter: drop-shadow(-5px 5px 3px black);
+          filter: drop-shadow(-5px 5px 3px black);
+}
+
+.mainNav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  width: 100vw;
+  background: white;
+  -webkit-filter: drop-shadow(0 5px 5px black);
+          filter: drop-shadow(0 5px 5px black);
+}
+
+.mainNav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  padding: 0;
+  list-style: none;
+  font-family: 'Germania One', cursive;
+  font-size: 16pt;
+  color: #B22922;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 85vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./resources/images/description_bg_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.description__infoContainer {
+  width: 35vw;
+}
+
+.description__infoContainer__title {
+  font-family: 'Germania One', cursive;
+  font-size: 48pt;
+  font-weight: 100;
+  color: white;
+  margin: 0 0 25px 0;
+}
+
+.description__infoContainer__h4 {
+  margin: 0;
+  font-family: 'Germania One', cursive;
+  font-size: 21pt;
+  font-weight: 100;
+  color: white;
+}
+
+.description__infoContainer__p {
+  margin: 0 0 25px 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  color: white;
+}
+
+.description__image {
+  height: 70%;
+}
+
+.albumSpecifications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 85vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E5E5E5;
+  margin: 0;
+  padding: 0;
+}
+
+.albumSpecifications__image {
+  height: 90%;
+  -webkit-filter: drop-shadow(-8px 8px 10px black);
+          filter: drop-shadow(-8px 8px 10px black);
+}
+
+.albumSpecifications__containerInfo {
+  width: 50vw;
+}
+
+.albumSpecifications__containerInfo__title {
+  font-family: 'Germania One', cursive;
+  font-size: 42pt;
+  font-weight: 100;
+  color: #B22922;
+  margin: 0 0 10px 0;
+}
+
+.albumSpecifications__containerInfo__mainDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item__name {
+  margin: 0;
+  font-family: 'Germania One', cursive;
+  font-size: 18pt;
+  font-weight: 200;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item__descrip {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12;
+  font-weight: 100;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item__left__name {
+  margin: 0;
+  font-family: 'Germania One', cursive;
+  font-size: 18pt;
+  font-weight: 200;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item__left__descrip {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12;
+  font-weight: 100;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item__right__prize {
+  margin: 0;
+  font-family: 'Germania One', cursive;
+  font-size: 14pt;
+  font-weight: 200;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item__right__button {
+  margin: 0;
+  padding: 5px 40px;
+  font-family: 'Germania One', cursive;
+  font-size: 12pt;
+  font-weight: 100;
+  background: #B22922;
+  color: white;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.albumSpecifications__containerInfo__mainDiv__item__right__button:hover {
+  background: white;
+  color: #B22922;
+  -webkit-filter: drop-shadow(-3px 3px 3px black);
+          filter: drop-shadow(-3px 3px 3px black);
+}
+
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 85vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./resources/images/promo_bg_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__infoContainer {
+  width: 35vw;
+  padding: 50px 60px;
+}
+
+.promo__infoContainer__title {
+  font-family: 'Germania One', cursive;
+  font-size: 48pt;
+  font-weight: 100;
+  color: white;
+  margin: 0;
+}
+
+.promo__infoContainer__p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 16pt;
+  font-weight: 600;
+  color: white;
+}
+
+.promo__infoContainer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-family: 'Germania One', cursive;
+  font-size: 28pt;
+  background: #B22922;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.promo__infoContainer__button:hover {
+  background: white;
+  color: #B22922;
+  -webkit-filter: drop-shadow(-5px 5px 3px black);
+          filter: drop-shadow(-5px 5px 3px black);
+}
+
+.promo__image {
+  height: 70%;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100%vh;
+  background: #E5E5E5;
+}
+
+.gallery__title {
+  font-family: 'Germania One', cursive;
+  font-size: 42pt;
+  font-weight: 100;
+  color: #B22922;
+  margin: 30px 0 30px 0;
+}
+
+.gallery__imageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80vw;
+  margin: 0 0 20px 0;
+}
+
+.gallery__imageContainer__image {
+  width: 45%;
+  height: 30%;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.gallery__imageContainer__image:hover {
+  width: 47%;
+  height: 32%;
+  -webkit-filter: drop-shadow(0 3px 5px black);
+          filter: drop-shadow(0 3px 5px black);
+}
+
+.newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 85vh;
+  background-image: url("./resources/images/newsletter_bg_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter__title {
+  font-family: 'Germania One', cursive;
+  font-size: 48pt;
+  font-weight: 100;
+  color: white;
+  margin: 0;
+}
+
+.newsletter__description {
+  font-family: 'Dosis', sans-serif;
+  font-size: 21pt;
+  font-weight: 100;
+  color: white;
+  margin: 0 0 30px 0;
+}
+
+.newsletter__inputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+}
+
+.newsletter__inputContainer__field {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  margin: 0 20px 0 0;
+  padding: 15px 10px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+.newsletter__inputContainer__button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: 'Germania One', cursive;
+  font-size: 21pt;
+  text-align: center;
+  background: #B22922;
+  color: white;
+  border: none;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.newsletter__inputContainer__button:hover {
+  background: white;
+  color: #B22922;
+  -webkit-filter: drop-shadow(-3px 3px 3px black);
+          filter: drop-shadow(-3px 3px 3px black);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  background: #E5E5E5;
+}
+
+.footer__title {
+  font-family: 'Germania One', cursive;
+  font-size: 24pt;
+  font-weight: 100;
+  color: #B22922;
+}
+
+.footer__mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.footer__mainContainer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.footer__mainContainer__item__image {
+  width: 30%;
+}
+
+.footer__mainContainer__item__name {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8B4E39;
+}
+
+.footer__mainContainer__item:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=main.css.map */
