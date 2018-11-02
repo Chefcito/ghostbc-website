@@ -1,6 +1,7 @@
 node_modules
 package-lock.json
 public/styles/_albumSpecifications.scss
+public/styles/_body.scss
 public/styles/_description.scss
 public/styles/_footer.scss
 public/styles/_gallery.scss
@@ -12,3 +13,4 @@ public/styles/_promo.scss
 public/styles/_variables.scss
 public/styles/main.css.map
 public/styles/main.scss
+productsDatabase.js
