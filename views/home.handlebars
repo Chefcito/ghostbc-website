@@ -7,21 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ghost - Prequelle</title>
 
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/home/main.css">
 </head>
 
 <body>
     <header class="header">
-        <img class="header__mainImage" src="./resources/images/main_logo.png" alt="Ghost_Logo">
+        <img class="header__logo" src="/resources/images/main_logo.png" alt="Ghost_Logo">
+        <ul class="header__ul">
+            <li  class="header__ul__li ">Featured</li>
+            <li  class="header__ul__li">Albums</li>
+            <li  class="header__ul__li">Tours</li>
+            <button  class="header__ul__button goToShopButton">GHOST MERCH</button>
+        </ul>
     </header>
 
     <section class="mainBanner">
         <article class="mainBanner__container">
-            <h2 class="mainBanner__container__title">Prequelle</h2>
-            <p class="mainBanner__container__p">Ghost’s fourth album is now available and is the first album to be
-                recorded since the band's leader was officially confirmed to be Tobias Forge. Get the limited edition
-                vinyl and the best Ghost merch by clicking on the button below!</p>
-            <div class="mainBanner__container__button">Get Now</div>
         </article>
     </section>
 
@@ -36,34 +37,32 @@
     </nav>
 
     <section class="description">
-        <article class="description__infoContainer">
-            <h2 class="description__infoContainer__title">Description</h2>
-            <h4 class="description__infoContainer__h4">Vinyl</h4>
-            <p class="description__infoContainer__p">Limited edition vinyl contains 10 of 12 songs, and a great vinyl
-                design</p>
-            <h4 class="description__infoContainer__h4">Deluxe CD</h4>
-            <p class="description__infoContainer__p">Containts the remaining songs (It’s A Sin and Avalanche) and also
-                have an exclusive CD design</p>
-            <h4 class="description__infoContainer__h4">Bundle</h4>
-            <p class="description__infoContainer__p">The bundle include album’s cover poster, a 3D lenticular cover art
-                and 7 colored pins</p>
+        <h2 class="description__title">Prequelle Album</h2>
+        <article class="description__mainContainer">
+            <img class="description__mainContainer__image" src="/resources/images/album-cover-image.png" alt="">
+            <div class="description__mainContainer__infoContainer">
+                <p class="description__mainContainer__infoContainer__p">Prequelle is the fourth studio
+                album by Ghost. It’s a conceptual
+                album about a man’s life
+                during the Black Death. It was
+                released for sale on June 1,
+                2018 under the record label
+                Loma Vista Recordings. The
+                promotional tour for the album
+                “A Pale Tour Named Death”
+                take place a the end of October
+                2018 in the US.</p>
+                <div class="description__mainContainer__infoContainer__button">Get Now</div>
+            </div>
         </article>
-
-        <img class="description__image" src="./resources/images/prequelle_vinyl.png" alt="">
     </section>
 
     <section class="albumSpecifications">
-        <img class="albumSpecifications__image" src="./resources/images/album_cover.jpg" alt="">
+        <img class="albumSpecifications__image" src="/resources/images/vinyl.png" alt="">
 
         <article class="albumSpecifications__containerInfo">
             <h2 class="albumSpecifications__containerInfo__title">Album Specifications</h2>
             <div class="albumSpecifications__containerInfo__mainDiv">
-                <div class="albumSpecifications__containerInfo__mainDiv__item">
-                    <div>
-                        <h4 class="albumSpecifications__containerInfo__mainDiv__item__name">Ghost</h4>
-                        <p class="albumSpecifications__containerInfo__mainDiv__item__descrip">Prequelle</p>
-                    </div>
-                </div>
 
                 <div class="albumSpecifications__containerInfo__mainDiv__item">
                     <div class="albumSpecifications__containerInfo__mainDiv__item__left">
@@ -74,7 +73,6 @@
 
                     <div class="albumSpecifications__containerInfo__mainDiv__item__right">
                         <p class="albumSpecifications__containerInfo__mainDiv__item__right__prize">$25 USD</p>
-                        <div class="albumSpecifications__containerInfo__mainDiv__item__right__button">Get Now</div>
                     </div>
                 </div>
 
@@ -87,7 +85,6 @@
 
                     <div class="albumSpecifications__containerInfo__mainDiv__item__right">
                         <p class="albumSpecifications__containerInfo__mainDiv__item__right__prize">$15 USD</p>
-                        <div class="albumSpecifications__containerInfo__mainDiv__item__right__button">Get Now</div>
                     </div>
                 </div>
 
@@ -100,7 +97,6 @@
 
                     <div class="albumSpecifications__containerInfo__mainDiv__item__right">
                         <p class="albumSpecifications__containerInfo__mainDiv__item__right__prize">$10 USD</p>
-                        <div class="albumSpecifications__containerInfo__mainDiv__item__right__button">Get Now</div>
                     </div>
                 </div>
 
@@ -112,7 +108,6 @@
 
                     <div class="albumSpecifications__containerInfo__mainDiv__item__right">
                         <p class="albumSpecifications__containerInfo__mainDiv__item__right__prize">$15 USD</p>
-                        <div class="albumSpecifications__containerInfo__mainDiv__item__right__button">Get Now</div>
                     </div>
                 </div>
 
@@ -124,7 +119,6 @@
 
                     <div class="albumSpecifications__containerInfo__mainDiv__item__right">
                         <p class="albumSpecifications__containerInfo__mainDiv__item__right__prize">$12 USD</p>
-                        <div class="albumSpecifications__containerInfo__mainDiv__item__right__button">Get Now</div>
                     </div>
                 </div>
 
@@ -137,7 +131,6 @@
 
                     <div class="albumSpecifications__containerInfo__mainDiv__item__right">
                         <p class="albumSpecifications__containerInfo__mainDiv__item__right__prize">$25 USD</p>
-                        <div class="albumSpecifications__containerInfo__mainDiv__item__right__button">Get Now</div>
                     </div>
                 </div>
             </div>
@@ -218,6 +211,8 @@
         {{/each}}
     </ul>
     -->
+
+    <script src="/scripts/home.js"></script>
 </body>
 
 </html>

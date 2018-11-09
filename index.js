@@ -29,6 +29,10 @@ app.engine('handlebars', hbs());
 app.set('view engine', 'handlebars');
 
 app.get('/', function(request, response){
+    response.render('home');
+});
+
+app.get('/shop', function(request, response){
     const collection = database.collection('products');
     collection.find({}).toArray(function(err, docs){
         if(err) {
@@ -39,12 +43,12 @@ app.get('/', function(request, response){
         var context = {
             products: docs,
         }
-        response.render('home', context);
+        response.render('shop', context);
     });
 });
 
 app.get('/addItemToCart', function(request, response){
-    const collection = database.collection('products');
+    const collection = database.collection('shopping-cart');
     collection.insert({
         name: 'Prequelle CD',
         price: 15,
