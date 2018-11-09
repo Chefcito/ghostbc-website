@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
             headers: {
                 'Content-type': 'application/x-www-form-urlencoded'
             },
-            body: `name=$${name}`,
+            body: `name=${name}`,
         }).then(function(response){
             return response.text();
         }).catch(function(error) {
