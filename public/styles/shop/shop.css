@@ -1,10 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Germania+One");
 @import url("https://fonts.googleapis.com/css?family=KoHo:300,300i,400,400i,700,700i");
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   background-color: #121212;
   overflow-x: hidden;
+}
+
+.finalDivider {
+  width: 80%;
+  height: 0;
+  margin: 20px 0;
+  border-color: #666666;
+  border-width: 0.5px;
 }
 
 .header {
@@ -146,7 +164,7 @@ body {
   font-size: 18px;
   border-style: none;
   background-color: #B22922;
-  color: #E5E5E5;
+  color: white;
   -webkit-transition: .2s ease;
   transition: .2s ease;
 }
@@ -169,6 +187,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
 }
 
 .ghostMerch__title {
@@ -176,6 +195,86 @@ body {
   font-size: 36pt;
   font-weight: 100;
   color: #E5E5E5;
+}
+
+.ghostMerch__productsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+
+.ghostMerch__productsContainer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  margin-bottom: 30px;
+  background-image: url("/resources/backgrounds/prequelle-merch-item-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.ghostMerch__productsContainer__item__image {
+  width: 40%;
+  padding: 20px;
+}
+
+.ghostMerch__productsContainer__item__descriptionDiv {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px;
+  width: 100%;
+  font-family: 'Germania One', cursive;
+  background-color: #191919;
+  color: #E5E5E5;
+}
+
+.ghostMerch__productsContainer__item__descriptionDiv__name {
+  margin: 0;
+  font-size: 14pt;
+}
+
+.ghostMerch__productsContainer__item__descriptionDiv__price {
+  margin: 0;
+  font-size: 14pt;
+}
+
+.ghostMerch__productsContainer__item:hover {
+  -webkit-filter: drop-shadow(0 0 5px rgba(229, 229, 229, 0.2));
+          filter: drop-shadow(0 0 5px rgba(229, 229, 229, 0.2));
+  cursor: pointer;
 }
 
 .footer {

@@ -34,8 +34,20 @@
 
     <section class="ghostMerch">
         <h2 class="ghostMerch__title">Ghost Merch</h2>
-        <div class="ghostMerch__title__productsContainer"></div>
+        <div class="ghostMerch__productsContainer">
+            {{#each products}}
+                <div class="ghostMerch__productsContainer__item">
+                    <img class="ghostMerch__productsContainer__item__image" src="{{image}}" alt="">
+                    <div class="ghostMerch__productsContainer__item__descriptionDiv">
+                        <p class="ghostMerch__productsContainer__item__descriptionDiv__name">{{name}}</p>
+                        <p class="ghostMerch__productsContainer__item__descriptionDiv__price">${{price}}USD</p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
     </section>
+
+    <hr class="finalDivider">
 
     <footer class="footer">
         <section class="footer__socialMediaContainer">
