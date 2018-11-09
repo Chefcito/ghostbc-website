@@ -28,19 +28,19 @@
         <ul class="mainNav__list">
             <li class="mainNav__list__li">Prequelle Album</li>
             <li class="mainNav__list__li">Ghost Merch</li>
-            <button class="mainNav__list__button goToMyCartButton">MY CART</button>
+            <button class="mainNav__list__button">MY CART</button>
         </ul>
     </nav>
 
-    <section class="ghostMerch">
-        <h2 class="ghostMerch__title">Ghost Merch</h2>
-        <div class="ghostMerch__productsContainer">
+    <section class="myCart">
+        <h2 class="myCart__title">My Cart</h2>
+        <div class="myCart__productsContainer">
             {{#each products}}
-                <div data-name="{{name}}" class="ghostMerch__productsContainer__item">
-                    <img class="ghostMerch__productsContainer__item__image" src="{{image}}" alt="">
-                    <div class="ghostMerch__productsContainer__item__descriptionDiv">
-                        <p class="ghostMerch__productsContainer__item__descriptionDiv__name">{{name}}</p>
-                        <p class="ghostMerch__productsContainer__item__descriptionDiv__price">${{price}}USD</p>
+                <div data-name="{{name}}" class="myCart__productsContainer__item">
+                    <img class="myCart__productsContainer__item__image" src="{{image}}" alt="">
+                    <div class="myCart__productsContainer__item__descriptionDiv">
+                        <p class="myCart__productsContainer__item__descriptionDiv__name">{{name}}</p>
+                        <p class="myCart__productsContainer__item__descriptionDiv__price">${{price}}USD</p>
                     </div>
                 </div>
             {{/each}}
@@ -70,6 +70,6 @@
         </section>
     </footer>
 
-    <script src="/scripts/shop.js"></script>
+    <script src="/scripts/checkout.js"></script>
 </body>
 </html>

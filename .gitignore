@@ -25,3 +25,13 @@ public/styles/shop/_mainNav.scss
 public/styles/shop/_variables.scss
 public/styles/shop/shop.css.map
 public/styles/shop/shop.scss
+
+public/styles/checkout/_body.scss
+public/styles/checkout/_footer.scss
+public/styles/checkout/_header.scss
+public/styles/checkout/_mainBanner.scss
+public/styles/checkout/_mainNav.scss
+public/styles/checkout/_myCart.scss
+public/styles/checkout/_variables.scss
+public/styles/checkout/checkout.css.map
+public/styles/checkout/checkout.scss
