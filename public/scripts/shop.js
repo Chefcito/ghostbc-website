@@ -4,11 +4,13 @@ window.addEventListener('load', function() {
         window.location.href = "/myCart";
     });
     
-    var product = document.querySelector('.ghostMerch__productsContainer__item');
+    var product = document.querySelectorAll('.ghostMerch__productsContainer__item');
 
-    product.addEventListener('click', function(){
-        console.log("hehe boi");
-        addToCart(product.getAttribute('data-name'));
+    product.forEach(function(element) {
+        element.addEventListener('click', function(){
+            console.log("hehe boi");
+            addToCart(element.getAttribute('data-name'));
+        });
     });
     
     function addToCart(name) {
